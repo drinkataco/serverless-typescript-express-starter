@@ -4,7 +4,7 @@
     "jest/globals": true,
     "node": true
   },
-  "extends": ["airbnb-base", "plugin:jest/all"],
+  "extends": ["airbnb-base", "plugin:jest/all", "plugin:@typescript-eslint/recommended"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 12,
@@ -12,5 +12,10 @@
   },
   "plugins": ["@typescript-eslint", "jest"],
   "ignorePatterns": [".build/", "node_modules/", ".serverless/"],
-  "rules": {}
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["**/__tests__/**/*.ts", "**/?(*.)test.ts"] }
+    ]
+  }
 }
