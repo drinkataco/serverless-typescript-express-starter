@@ -4,7 +4,12 @@
     "jest/globals": true,
     "node": true
   },
-  "extends": ["airbnb-typescript/base", "plugin:jest/all", "plugin:@typescript-eslint/recommended"],
+  "extends": [
+    "airbnb-typescript/base",
+    "plugin:jest/all",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 12,
