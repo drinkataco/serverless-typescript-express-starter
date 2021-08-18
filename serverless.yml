@@ -6,7 +6,7 @@ custom:
   stage: ${opt:stage, 'offline'}
   region: ${opt:region, 'eu-west-1'}
   serverless-offline:
-    httpPort: ${env:PORT, '4000'}
+    httpPort: ${env:PORT, '8000'}
     noPrependStageInUrl: true
 
 provider:
