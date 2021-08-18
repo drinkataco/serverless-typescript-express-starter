@@ -20,15 +20,11 @@ functions:
   example:
     handler: src/functions/example/index.default
     events:
-      - http: 
+      - http:
           path: /example
           method: GET
 
 plugins:
   - serverless-plugin-typescript
   - serverless-offline
-
-
-
-
 
