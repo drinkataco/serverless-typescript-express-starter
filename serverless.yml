@@ -3,8 +3,6 @@ service: serverless-typescript-express-starter
 frameworkVersion: '2'
 
 custom:
-  stage: ${opt:stage, 'offline'}
-  region: ${opt:region, 'eu-west-1'}
   serverless-offline:
     httpPort: ${env:PORT, '8000'}
     noPrependStageInUrl: true
