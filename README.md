@@ -1,5 +1,7 @@
 # Serverless Typescript Expressjs Starter
 
+![Lint and Tests](https://github.com/drinkataco/serverless-typescript-express-starter/actions/workflows/main.yml/badge.svg)
+
 ![Architecture Diagram](./assets/architecture.png "Severless API Architecture Diagram")
 
 A typescript starter for Serverless APIs. Including testing frameworks and function routing bootstrapping.
