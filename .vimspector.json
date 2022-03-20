@@ -1,0 +1,36 @@
+{
+  "configurations": {
+    "Serverless": {
+      "adapter": "vscode-node",
+      "configuration": {
+        "type": "node",
+        "request": "launch",
+        "program": "${workspaceRoot}/node_modules/.bin/serverless",
+        "args": ["offline"],
+        "runtimeArgs": ["--nolazy"],
+        "console": "integratedTerminal",
+        "skipFiles": ["<node_internals>/**"],
+        "sourceMaps": true,
+        "cwd": "${workspaceRoot}"
+      }
+    },
+    "Jest": {
+      "adapter": "vscode-node",
+      "breakpoints": {
+        "exception": {
+          "all": "N",
+          "uncaught": "N"
+        }
+      },
+      "configuration": {
+        "request": "launch",
+        "name": "Jest debugger",
+        "type": "node",
+        "console": "integratedTerminal",
+        "program": "${workspaceRoot}/node_modules/.bin/jest",
+        "skipFiles": ["*/<node_internals>/**/*.js", "node_modules/**/*.js"],
+        "cwd": "${workspaceRoot}"
+      }
+    }
+  }
+}
